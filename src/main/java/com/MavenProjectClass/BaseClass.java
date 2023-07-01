@@ -21,6 +21,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -35,13 +36,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 	
 	public static  WebDriver driverBaseClassReference;
-	
+
 	public static WebDriver launchBrowserMethod(String browser) {
 		try {
 		switch (browser) {
 		case "Chrome":
+			ChromeOptions option = new ChromeOptions();
+            option.addArguments("--remote-allow-origins=*");
 			WebDriverManager.chromedriver().setup();
-			driverBaseClassReference = new ChromeDriver();
+			driverBaseClassReference = new ChromeDriver(option);
 			break;
 		case "Edge":
 			WebDriverManager.edgedriver().setup();

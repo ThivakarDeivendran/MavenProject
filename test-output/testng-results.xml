@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-23T20:27:23 IST" name="Default suite" finished-at="2023-03-23T20:29:03 IST" duration-ms="100149">
+    <groups>
+    </groups>
+    <test started-at="2023-03-23T20:27:23 IST" name="Default test" finished-at="2023-03-23T20:29:03 IST" duration-ms="100149">
+      <class name="projectGreen.AdactinHotelApp">
+        <test-method is-config="true" signature="logger()[pri:0, instance:projectGreen.AdactinHotelApp@6c1a5b54]" started-at="2023-03-23T20:27:23 IST" name="logger" finished-at="2023-03-23T20:27:23 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method signature="launchBrowserMethod()[pri:1, instance:projectGreen.AdactinHotelApp@6c1a5b54]" started-at="2023-03-23T20:27:23 IST" name="launchBrowserMethod" finished-at="2023-03-23T20:28:18 IST" duration-ms="54480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserMethod -->
+        <test-method signature="launchApplicationMethod()[pri:2, instance:projectGreen.AdactinHotelApp@6c1a5b54]" started-at="2023-03-23T20:28:18 IST" name="launchApplicationMethod" finished-at="2023-03-23T20:28:26 IST" depends-on-methods="com.MavenProjectClass.BaseClass.launchBrowserMethod" duration-ms="8074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplicationMethod -->
+        <test-method signature="credentialPageApplicationMethod()[pri:3, instance:projectGreen.AdactinHotelApp@6c1a5b54]" started-at="2023-03-23T20:28:26 IST" name="credentialPageApplicationMethod" finished-at="2023-03-23T20:28:30 IST" duration-ms="4415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- credentialPageApplicationMethod -->
+        <test-method signature="searchHotelPageMethod()[pri:4, instance:projectGreen.AdactinHotelApp@6c1a5b54]" started-at="2023-03-23T20:28:30 IST" name="searchHotelPageMethod" finished-at="2023-03-23T20:28:35 IST" depends-on-methods="projectGreen.AdactinHotelApp.credentialPageApplicationMethod" duration-ms="4544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelPageMethod -->
+        <test-method signature="searchHotelSummaryPageMethod()[pri:5, instance:projectGreen.AdactinHotelApp@6c1a5b54]" started-at="2023-03-23T20:28:35 IST" name="searchHotelSummaryPageMethod" finished-at="2023-03-23T20:28:39 IST" depends-on-methods="projectGreen.AdactinHotelApp.searchHotelPageMethod" duration-ms="3982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelSummaryPageMethod -->
+        <test-method signature="bookAHotelPageMethod()[pri:6, instance:projectGreen.AdactinHotelApp@6c1a5b54]" started-at="2023-03-23T20:28:39 IST" name="bookAHotelPageMethod" finished-at="2023-03-23T20:28:48 IST" depends-on-methods="projectGreen.AdactinHotelApp.searchHotelSummaryPageMethod" duration-ms="9632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAHotelPageMethod -->
+        <test-method signature="bookingConfirmationMethod()[pri:7, instance:projectGreen.AdactinHotelApp@6c1a5b54]" started-at="2023-03-23T20:28:48 IST" name="bookingConfirmationMethod" finished-at="2023-03-23T20:28:50 IST" duration-ms="1467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingConfirmationMethod -->
+        <test-method signature="bookedItineraryMethod()[pri:8, instance:projectGreen.AdactinHotelApp@6c1a5b54]" started-at="2023-03-23T20:28:50 IST" name="bookedItineraryMethod" finished-at="2023-03-23T20:29:02 IST" duration-ms="12676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookedItineraryMethod -->
+        <test-method is-config="true" signature="closeAdactinApplication()[pri:0, instance:projectGreen.AdactinHotelApp@6c1a5b54]" started-at="2023-03-23T20:29:02 IST" name="closeAdactinApplication" finished-at="2023-03-23T20:29:03 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAdactinApplication -->
+      </class> <!-- projectGreen.AdactinHotelApp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
