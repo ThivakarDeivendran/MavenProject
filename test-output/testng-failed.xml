@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="TestEdge(failed)">
+    <parameter name="userBrowser" value="Edge"/>
     <classes>
-      <class name="projectGreen.AdactinHotelApp">
+      <class name="projectGreen.TestNGAnnotationsCrossBrowserTest">
         <methods>
-          <include name="bookAHotelPageMethod"/>
-          <include name="launchBrowserMethod"/>
-          <include name="logger"/>
-          <include name="bookingConfirmationMethod"/>
-          <include name="credentialPageApplicationMethod"/>
-          <include name="launchApplicationMethod"/>
-          <include name="closeAdactinApplication"/>
-          <include name="searchHotelPageMethod"/>
-          <include name="searchHotelSummaryPageMethod"/>
+          <include name="loginMethod1"/>
+          <include name="login"/>
+          <include name="logoff"/>
         </methods>
-      </class> <!-- projectGreen.AdactinHotelApp -->
+      </class> <!-- projectGreen.TestNGAnnotationsCrossBrowserTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TestEdge(failed) -->
+</suite> <!-- Failed suite [Suite] -->

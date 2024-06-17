@@ -20,7 +20,7 @@ public class ListenersClass implements ITestListener{
 		htmlReport = new ExtentSparkReporter(System.getProperty("user.dir") + "/MyExtentReport/myreport.html");
 		htmlReport.config().setDocumentTitle("Automation Testing");
 		htmlReport.config().setReportName("Functional Testing");
-		htmlReport.config().setTheme(Theme.DARK);
+		htmlReport.config().setTheme(Theme.STANDARD);
 		
 		extentReport = new ExtentReports();
 		extentReport.attachReporter(htmlReport);
@@ -44,5 +44,4 @@ public class ListenersClass implements ITestListener{
 	public void onFinish(ITestContext context) {
 		extentReport.flush();
 	}
-
 }

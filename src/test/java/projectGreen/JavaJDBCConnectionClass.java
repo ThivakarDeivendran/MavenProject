@@ -31,7 +31,7 @@ public class JavaJDBCConnectionClass {
 //		conDatabase = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "hr", "admin");
 //		createStatement = conDatabase.createStatement();
 //		// selectQueryStatement();
-//		insertQueryStatement();
+		insertQueryStatement();
 //		createStatement.close();
 //		conDatabase.close();
 		testing2();
@@ -117,8 +117,7 @@ public class JavaJDBCConnectionClass {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
 		}
-		Statement s = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "hr", "admin")
-				.createStatement();
+		Statement s = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "hr", "admin").createStatement();
 		ResultSet ss = s.executeQuery("SELECT REGION_NAME FROM REGIONS WHERE REGION_ID =3");
 		while (ss.next()) {
 			String gg = ss.getString("REGION_NAME");

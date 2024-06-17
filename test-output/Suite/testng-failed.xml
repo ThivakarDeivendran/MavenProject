@@ -6,23 +6,11 @@
     <classes>
       <class name="projectGreen.TestNGAnnotationsCrossBrowserTest">
         <methods>
-          <include name="loginMethod1" invocation-numbers="1"/>
+          <include name="loginMethod1"/>
           <include name="login"/>
           <include name="logoff"/>
         </methods>
       </class> <!-- projectGreen.TestNGAnnotationsCrossBrowserTest -->
     </classes>
   </test> <!-- TestEdge(failed) -->
-  <test thread-count="3" parallel="tests" name="TestChrome(failed)">
-    <parameter name="userBrowser" value="Chrome"/>
-    <classes>
-      <class name="projectGreen.TestNGAnnotationsCrossBrowserTest">
-        <methods>
-          <include name="loginMethod1" invocation-numbers="0 1"/>
-          <include name="login"/>
-          <include name="logoff"/>
-        </methods>
-      </class> <!-- projectGreen.TestNGAnnotationsCrossBrowserTest -->
-    </classes>
-  </test> <!-- TestChrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

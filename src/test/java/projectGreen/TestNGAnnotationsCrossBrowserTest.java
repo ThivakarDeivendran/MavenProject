@@ -1,5 +1,6 @@
 package projectGreen;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -18,7 +19,7 @@ public class TestNGAnnotationsCrossBrowserTest extends BaseClass {
 	public void login(String userDesiredBrowser) {
 		driver = BaseClass.launchBrowserMethod(userDesiredBrowser);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 	}
 	@Test(dataProvider = "saucedemo")
